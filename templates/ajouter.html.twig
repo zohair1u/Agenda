@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+<h1>Ajouter un contact :</h1>
+
+
+{# Formulaire par défault :  #}
+{# {{ form(formAdd)}} #}
+
+
+
+{# Désactivation du msg d'Erreur HTML sur le formulaire : #}
+{{ form_start(formAdd, {'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_widget(formAdd) }}
+{{ form_end(formAdd)}}  
+
+
+
+
+{% endblock %}
